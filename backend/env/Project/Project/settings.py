@@ -52,22 +52,6 @@ MIDDLEWARE = [
 ]
 
 
-PHONE_VERIFICATION = {
-        'BACKEND': 'phone_verify.backends.twilio.TwilioBackend',
-        'TWILIO_SANDBOX_TOKEN':'123456',
-        'OPTIONS': {
-            'SID': 'fake',
-            'SECRET': 'fake',
-            'FROM': '+14755292729'
-        },
-        'TOKEN_LENGTH': 6,
-        'MESSAGE': 'Welcome to {app}! Please use security code {otp} to proceed.',
-        'APP_NAME': 'Phone Verify',
-        'OTP_EXPIRATION_TIME': 3600  # In seconds only
-    }
-
-    
-
 ROOT_URLCONF = 'Project.urls'
 
 TEMPLATES = [
